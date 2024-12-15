@@ -1,0 +1,280 @@
+body {
+  width: 100vw;
+  height: 100vh;
+
+  overflow: scroll;
+
+  margin: 0;
+
+  display: flex;
+  flex-direction: column;
+
+  background: #11111b;
+  color: #cdd6f4;
+
+  font-size: 13pt;
+  font-family: "Linux Biolinum", "Linux Libertine", serif;
+}
+
+#root {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.topic {
+  display: flex;
+  flex-direction: row;
+  width: 80ch;
+  padding: 1ch 1ch;
+  border: solid #313244 1pt;
+  margin-bottom: 1em;
+  align-items: center;
+  justify-content: space-between;
+}
+
+button {
+  /* background-color: #181825; */
+  background: #1e1e2e;
+  font-size: 0.8em;
+
+  padding: 0.5ch 1.5ch;
+  margin: 0;
+  border: solid #45475a 1pt;
+  color: #cdd6f4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+button:hover {
+  background: #313244;
+}
+
+#loading {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2em;
+  text-align: center;
+}
+
+#loading #comm {
+  display: flex;
+  flex-direction: row;
+  width: 40ch;
+  padding: 1ch 1ch;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#loading #progress-bar {
+  display: flex;
+  background: #181825;
+  height: 3pt;
+  width: 40ch;
+  margin-bottom: 4em;
+}
+
+#loading #progress-bar #progress {
+  display: flex;
+  background: #cdd6f4;
+  height: 3pt;
+  width: 0ch;
+}
+
+.problem {
+  width: 80ch;
+  padding: 0.5em 2em;
+  padding-top: 0;
+  background: #181825;
+  border: solid #313244 1pt;
+  margin: 1em;
+}
+
+.problem textarea {
+  padding: 1ch 1ch;
+  background: #11111b;
+  border: solid #313244 1pt;
+  border-bottom: solid #313244 3pt;
+  margin-bottom: 1em;
+  color: #cdd6f4;
+  font-size: 0.75em;
+  font-family: "Fira Code", sans-serif;
+}
+
+a {
+  color: #f5c2e7;
+  text-decoration: none;
+}
+
+a:hover {
+  background: rgb(242, 205, 205, 0.1);
+  text-decoration: underline 1pt rgb(245, 194, 231, 0.5);
+}
+
+header,
+footer {
+  font-size: 12pt;
+  font-family: serif;
+
+  display: flex;
+  justify-content: space-between;
+  gap: 1em;
+  align-items: center;
+  background: #181825;
+  padding: 0.5em 1em;
+}
+
+header {
+  border-bottom: solid #313244 1pt;
+}
+
+footer {
+  border-top: solid #313244 1pt;
+  z-index: 1;
+}
+
+header *,
+footer * {
+  margin: 0;
+}
+
+header input {
+  background: #1e1e2e;
+  border: solid #45475a 1pt;
+  border-radius: 4pt;
+  color: #cdd6f4;
+  padding: 0.5ch;
+}
+
+header button {
+  padding: 0;
+  margin: 0;
+  background: none;
+  border: none;
+  color: #cdd6f4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* 
+  header button :hover {
+    background: rgb(242, 205, 205, 0.1);
+  } */
+
+#main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  z-index: 1;
+  padding: 2em 0;
+}
+
+#cover {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 3in;
+}
+
+#cover,
+#ender {
+  /* background-image: url("https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fimages.hdqwalls.com%2Fwallpapers%2Fabstract-digital-art-purple-background-5k-wr.jpg&f=1&nofb=1&ipt=e9c0de571015451f06a65d48f26e6fa72456fcf018b3ad651c00a96edfbc32a4&ipo=images");
+    background-position: center;
+    background-size: cover; */
+}
+
+#ender {
+  min-height: 2em;
+  filter: brightness(50%) blur(4px);
+  z-index: 0;
+}
+
+#toc {
+  background: #181825;
+  padding: 0 4ch;
+  border: solid #1e1e2e 1pt;
+  width: 20ch;
+  max-width: 20ch;
+  position: absolute;
+  top: 0;
+  left: calc(50vw - 60ch - 20ch);
+}
+
+#toc p {
+  margin-top: 2ch;
+  margin-bottom: 1ch;
+}
+
+#toc ol {
+  padding: 0 2ch;
+  margin-top: 0;
+  margin-bottom: 2ch;
+}
+
+#toc li {
+  padding: 0.5ch 0;
+}
+
+#page {
+  background: #11111b;
+  /* padding: 2em 0; */
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: scroll;
+  position: relative;
+}
+
+#page-inner {
+  background: #181825;
+  flex: 1;
+  width: 100%;
+  max-width: 88ch;
+  padding: 0.5ch 2.5ch;
+  border: solid #1e1e2e 1pt;
+}
+
+br {
+  width: 100%;
+  min-height: 3em;
+}
+
+#page p {
+  margin: 0;
+  padding-top: 1ch;
+  padding-bottom: 1ch;
+}
+
+hr {
+  width: 100%;
+  color: #313244;
+}
+
+#title {
+  font-size: 3em;
+  /* font-family: "Linux Biolinum"; */
+  padding: 1.5em;
+}
+
+h1,
+h2 {
+  text-align: center;
+  padding-top: 2ch;
+  padding-bottom: 2ch;
+}
+
+#minimap {
+  position: absolute;
+  top: 0;
+  right: 5pt;
+}
+
+p .MathJax {
+  margin: 2ch 0 !important;
+}
