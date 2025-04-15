@@ -2,7 +2,7 @@
 
 - [**Run in Browser**](...)
 - [**Documentation**](...)
-- [AGPLv3 License](...)
+- [AGPLv3 License](LICENSE)
 
 **Problem Statement.**
 
