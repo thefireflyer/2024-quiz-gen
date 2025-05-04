@@ -1,4 +1,4 @@
-**CSCI 301, Practice Quiz Generator.**
+**CSCI 301, Practice Quiz Generator.** (on hold)
 
 - [**Run in Browser**](...)
 - [**Documentation**](...)
