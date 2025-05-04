@@ -1,8 +1,9 @@
-**CSCI 301, Practice Quiz Generator.** (on hold)
+**CSCI 301, Practice Quiz Generator.**
 
 - [**Run in Browser**](...)
 - [**Documentation**](...)
 - [AGPLv3 License](LICENSE)
+- Currently on hold; CAS and web client partially implemented.
 
 **Problem Statement.**
 
